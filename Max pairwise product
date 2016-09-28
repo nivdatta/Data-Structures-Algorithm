@@ -1,0 +1,12 @@
+# Uses python3
+n = int(input())
+a = [int(x) for x in input().split()]
+assert(len(a) == n)
+
+result = 0
+
+i = max(a)
+a.remove(i)
+j = max(a)
+result = i * j
+print(result)
